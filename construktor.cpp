@@ -27,6 +27,7 @@ class Mahasiswa
 };
 
 Mahasiswa::Mahasiswa(string iNama){
+    nim = 0;
     nama = iNama;
 }
 
@@ -37,10 +38,10 @@ Mahasiswa::Mahasiswa(int iNim, string iNama)
 };
 
 int main(){
-    Mahasiswa mhs1("Gheo Batam");
-    Mahasiswa mhs2("Zhilal Bengkulu");
-    Mahasiswa mhs3("Halim Banjar");
-    Mahasiswa mhs4("Yudha Karawang");
+    Mahasiswa mhs1;
+    Mahasiswa mhs2(20);
+    Mahasiswa mhs3("Halim");
+    Mahasiswa mhs4(30,"Yudha Karawang");
 
     mhs1.cetak();
     mhs2.cetak();
