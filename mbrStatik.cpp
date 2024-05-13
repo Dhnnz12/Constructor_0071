@@ -17,3 +17,23 @@ public:
         setID();
     }
 };
+
+int mahasiswa::nim = 20;
+
+void mahasiswa::setID()
+{
+    id = nim++;
+}
+
+void mahasiswa::PrintAll()
+{
+    cout << "ID   =" << id << endl;
+    cout << "Nama =" << nama << endl;
+    cout << endl;
+}
+
+
+int main()
+{
+    
+}
